@@ -266,6 +266,19 @@ ol {
     color: #434455;
 }
 
+.soc-icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+}
+
 .section-three {
 
     background-color: #f4f4fd;
@@ -323,6 +336,14 @@ ol {
 
 .team-name-profession {
     padding: 32px 0;
+}
+
+.our-team-soc-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
 }
 
 .section-my-portfolio {
@@ -404,9 +425,22 @@ ol {
     width: 264px;
 }
 
+.footer-social-media {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
+}
 
-
+.footer-soc-icons {
+    display: flex;
+    margin: 0 auto;
+    gap: 16px;
 }
