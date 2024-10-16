@@ -70,15 +70,10 @@ ol {
     display: flex;
     align-items: center;
     gap: 40px;
-
-
-
 }
 
 .navigation-menu {
     display: flex;
-
-
 }
 
 .logo {
@@ -90,10 +85,8 @@ ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-
     padding-top: 24px;
     padding-bottom: 24px;
-
 }
 
 .Studio {
@@ -119,7 +112,6 @@ ol {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
-
 }
 
 .navigation-item:hover {
