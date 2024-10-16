@@ -271,7 +271,8 @@ ol {
     display: flex;
     gap: 24px;
     align-items: center;
-    margin: 0 auto;
+    justify-content: center;
+
     margin-bottom: 8px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
