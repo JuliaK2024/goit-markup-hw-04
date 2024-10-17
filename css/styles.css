@@ -342,12 +342,16 @@ ol {
 
 }
 
-.our-team-soc-icons-item {
+.social-link {
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.social-icons {
+    fill: #f4f4fd
 }
 
 .our-team-soc-icons-link {
