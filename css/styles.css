@@ -464,8 +464,10 @@ ol {
 .footer-soc-icons {
     display: flex;
     align-items: baseline;
-
     gap: 16px;
 }
 
-.footer-logo-paragraph {}
+.footer-logo-paragraph {
+    margin-right: 120px;
+
+}
