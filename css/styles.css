@@ -357,13 +357,12 @@ ol {
 }
 
 .social-link:hover {
-    background-color: #31D0AA;
-
+    background-color: #404bbf;
+    ;
 }
 
 .social-link:focus {
-    background-color: #31D0AA;
-
+    background-color: #404bbf;
 }
 
 
