@@ -499,3 +499,8 @@ ol {
     display: flex;
     align-items: baseline;
 }
+
+.social-link:hover,
+.social-link:focus {
+    background-color: #31d0aa;
+}
