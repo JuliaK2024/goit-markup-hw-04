@@ -427,6 +427,7 @@ ol {
 }
 
 .our-portfolio-cover-text {
+    position: absolute;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
