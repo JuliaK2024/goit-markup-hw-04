@@ -485,9 +485,17 @@ ol {
 .footer-soc-icons {
     display: flex;
     align-items: baseline;
+}
+
+.our-team-soc-icons-item {
     gap: 16px;
 }
 
 .footer-logo-paragraph {
     margin-right: 120px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
 }
