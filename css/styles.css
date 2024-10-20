@@ -42,7 +42,6 @@ ol {
 }
 
 .container {
-
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px 0 15px;
@@ -50,11 +49,12 @@ ol {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
     display: flex;
-
+    align-items: center;
 }
 
 .navigation {
@@ -62,23 +62,15 @@ ol {
     gap: 40px;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 .nav-list {
-    display: block;
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.navigation-menu {
-    display: flex;
-}
-
 .logo {
-
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -90,18 +82,8 @@ ol {
     padding-bottom: 24px;
 }
 
-.Studio {
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-
-    text-transform: uppercase;
+.studio {
     color: #2e2f42;
-    margin-right: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .navigation-item {
@@ -113,15 +95,33 @@ ol {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
+    position: relative;
 }
 
-.navigation-item:hover {
+.navigation-item.current {
+    position: relative;
+}
+
+.navigation-item.current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+}
+
+.navigation-item:hover,
+.navigation-item:focus,
+.tel-mail:hover,
+.tel-mail:focus,
+.navigation-item.current {
     color: #404bbf;
 }
 
-.navigation-item:focus {
-    color: #404bbf;
-}
 
 .tel-mail {
     font-family: "Roboto", sans-serif;
@@ -135,30 +135,18 @@ ol {
     display: flex;
     font-style: normal;
     margin-left: auto;
-
 }
 
 .address-list {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
     gap: 40px;
     margin-left: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.tel-mail:hover {
-    color: #404BBF;
-}
-
-.tel-mail:focus {
-    color: #404BBF;
-}
-
 .section-one {
     background-color: #2e2f42;
     padding: 188px 0 188px;
-
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -168,7 +156,6 @@ ol {
 }
 
 .h-one {
-
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 56px;
@@ -207,7 +194,6 @@ ol {
     cursor: pointer;
     margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .visually-hidden {
@@ -268,25 +254,20 @@ ol {
     gap: 24px;
     align-items: center;
     justify-content: center;
-
     margin-bottom: 8px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     width: 264px;
     height: 112px;
     background: #f4f4fd;
-
 }
 
 .section-three {
-
     background-color: #f4f4fd;
     padding: 120px 0;
 }
 
 .our-team-list {
-
-    margin-bottom: 32px;
     display: flex;
     gap: 24px;
     align-items: center;
@@ -321,7 +302,6 @@ ol {
     color: #2e2f42;
     text-transform: capitalize;
     margin-bottom: 8px;
-
 }
 
 .members-profession {
@@ -329,8 +309,8 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-bottom: 32px;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-name-profession {
@@ -443,7 +423,6 @@ ol {
 .our-portfolio-item-dep {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
-    margin-bottom: 8px;
     border-top: none;
 }
 
@@ -457,6 +436,7 @@ ol {
     height: 100%;
     width: 100%;
     transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio-overlay {
@@ -465,30 +445,19 @@ ol {
 }
 
 .footer {
-
     background-color: #2e2f42;
     padding: 100px 0 100px;
 }
 
 .studio-footer {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: #f4f4fd;
-    line-height: 1.17
 }
 
 .footer-paragraph {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    width: 264px;
-
+    max-width: 264px;
 }
 
 .footer-social-media {
@@ -503,6 +472,8 @@ ol {
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-soc-icons {
@@ -513,5 +484,4 @@ ol {
 
 .footer-logo-paragraph {
     margin-right: 120px;
-
 }
